@@ -8,18 +8,15 @@
         <Input label="Altura" inputId="altura" :outputValue="valueSelectAltura" minRange="0.50" maxRange="2.50" step="0.01" 
         />
       </div>
+      <div class="button-container">
+        <button class="button-card" @click.prevent="calculate" >{{buttonText}}</button>
+      </div>
       <div class="result" >
         <p v-if="this.resultValue!=''">{{ resultTitle }}</p>
         <p v-if="this.resultValue!=''">{{ resultValue }}</p>
         <p v-if="this.resultValue!=''">{{ resultEvaluation}}</p>
       </div>
-      <div class="button-container">
-        <button class="button-card" @click.prevent="calculate" >{{buttonText}}</button>
-      </div>
-
     </div>
-    
-    
   </div>
 </template>
 
@@ -105,9 +102,11 @@ export default {
   }  
   .result {
     width: 60%;
-    height: 60px;
-    display: flex;   
+    height: 120px;
+    display: flex;
+    
     justify-content: center;
+    margin-bottom: 1em;
     @media screen and (max-width: 600px) {
         width: 90%;
     } 
@@ -134,7 +133,7 @@ export default {
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    //margin-bottom: 2em;
   }
 </style>
