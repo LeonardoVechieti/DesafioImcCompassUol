@@ -31,6 +31,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
   height: 100vh;
   font-family: "Poppins", sans-serif;
   background: linear-gradient(217deg, #F7B718 , #F5C54E 70.71%),
@@ -43,11 +44,12 @@ export default {
     background: #F8EBC8;
     border: none;
     border-radius: 10px;
-    width: 35%;
+    width: 40%;
   }      
   .title-card {
     font-size: 1.5rem;
     text-align: center;
+    width: 100%;
  
   }    
 </style>
