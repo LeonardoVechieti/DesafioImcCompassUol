@@ -8,6 +8,7 @@
       :min="minRange"
       :max="maxRange"
       :step="step"
+      @input="getData"
     />
   </div>
 </template>
@@ -16,6 +17,11 @@
 export default {
     // eslint-disable-next-line
     name: "Input",
+    data() {
+        return {
+            output: 0,
+        };
+    },
     props: {
         label: {
             type: String,
@@ -36,6 +42,18 @@ export default {
         step: {
             type: Number,
             default: 1
+        },
+    
+    },
+    methods: {
+        getData() {
+            if(this.inputId === "peso") {
+                this.output = document.getElementById(this.inputId).value;
+            }
+            if(this.inputId === "altura") {
+                this.output = document.getElementById(this.inputId).value;
+            }
+           
         }
     },
 
