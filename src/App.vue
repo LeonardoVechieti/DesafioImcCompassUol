@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Imc from "@/views/Imc/Imc.vue";
+import Imc from "@/views/Imc/Imc";
 export default {
   // eslint-disable-next-line
   name: "app",
@@ -18,8 +18,6 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 body{
-  
-  font-family: 'Inter';
   margin: 0;
   padding: 0;
 }

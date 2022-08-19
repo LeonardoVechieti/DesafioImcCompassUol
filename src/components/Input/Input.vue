@@ -1,7 +1,10 @@
 <template>
   <div class="input">
-    <label>{{ label }}</label>
-    <output>{{ output }}</output>
+    <div class="label-output">
+        <label>{{ label }}</label>
+        <output>{{ output }}</output>
+    </div>
+    
     <input class="input-field"
       type="range"
       :id="inputId"
@@ -65,15 +68,21 @@ export default {
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  height: 70px;
 }
 label {
-    font-size: 1.2em; 
+    font-size: 1.3em; 
     width: 100%;;  
 }
 output {
-    font-size: 1.2em;
+    font-size: 1.4em;
     text-align: center;
     color: #f7b718;
+}
+.label-output {
+    display: flex;
+;
+    width: 100%;
 }
 .input-field {
     width: 100%;
