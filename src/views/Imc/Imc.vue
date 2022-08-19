@@ -13,7 +13,7 @@
         <p v-if="this.resultValue!=''">{{ resultValue }}</p>
         <p v-if="this.resultValue!=''">{{ resultEvaluation}}</p>
       </div>
-      <div>
+      <div class="button-container">
         <button class="button-card" @click.prevent="calculate" >{{buttonText}}</button>
       </div>
 
@@ -119,8 +119,14 @@ export default {
         }    
     } 
   } 
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+  }
   .button-card {
-    width: 160px;
+    width: 90%;
     height: 2.2em;
     border: none;
     border-radius: 5px;
