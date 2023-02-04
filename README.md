@@ -1,4 +1,4 @@
-# DesafioImcVueJS
+# Desafio calculadora Imc Vue.JS
 
 This project is a final challenge of the Compass.Uol scholarship program.
 
