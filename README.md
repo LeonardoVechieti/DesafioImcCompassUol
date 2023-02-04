@@ -1,4 +1,8 @@
-# desafio_imc
+# DesafioImcVueJS
+
+This project is a final challenge of the Compass.Uol scholarship program.
+
+![alt text](https://github.com/LeonardoVechieti/DesafioImcCompassUol/blob/develop/CalculadoraIMC.png)
 
 ## Project setup
 ```
